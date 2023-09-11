@@ -57,8 +57,8 @@
 </head>
 <body>
   <form
-    action="https://formspree.io/f/xnqkvebl"
-    method="POST"
+    //action="https://formspree.io/f/xnqkvebl"
+    //method="POST"
   >
     <label>
       Váš email:
@@ -70,6 +70,15 @@
     </label>
     <!-- další pole formuláře zde -->
     <button type="submit">Odeslat</button>
+    <script type="text/javascript">
+        let count = 0;
+        let btn = document.getElementById("submit");
+        let disp = document.getElementById("display"):
+        btn.addEventListener("click", function () {
+            count++;
+            disp.innerHTML = count;
+        });
+    </script>
   </form>
 </body>
 </html>
