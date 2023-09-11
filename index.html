@@ -57,7 +57,7 @@
 </head>
 <body>
   <form
-    action="https://formspree.io/f/xnqk"
+    action="https://formspree.io/f/xnqkveb"
     method="POST"
   >
     <label>
@@ -72,16 +72,30 @@
     <button type="submit" id="submit">Odeslat</button>
     <script type="text/javascript">
       let btn = document.getElementById("submit");
-      btn.addEventListener("click", function () {
-        if (!checkCookie("lastClick")) {
+      btn.addEventListener("click", function (event) {
+        if (!checkCookie("formSubmitted")) {
           // Tlačítko nebylo stisknuto v posledních 3 hodinách
-          // Vložte kód pro odeslání formuláře nebo jinou akci
-
-          // Nastavte cookie pro poslední stisknutí tlačítka
-          setCookie("lastClick", new Date().toString(), 3);
+          // Vložte kód pro odeslání formuláře
+          // Nastavte cookie pro označení, že formulář byl odeslán
+          <form
+    action="https://formspree.io/f/xnqk"
+    method="POST"
+  >
+    <label>
+      Váš email:
+      <input type="email" name="email" required>
+    </label>
+    <label>
+      Vaše požadavky:
+      <textarea name="message" required></textarea>
+    </label>
+    <!-- Další pole formuláře zde -->
+    <button type="submit" id="submit">Odeslat</button>
+          setCookie("formSubmitted", "true", 3);
         } else {
-          // Tlačítko bylo stisknuto v posledních 3 hodinách, neuděláme nic
-          alert("Můžete stisknout tlačítko pouze jednou za 3 hodiny.");
+          // Tlačítko bylo stisknuto v posledních 3 hodinách, zabraňte odeslání formuláře
+          event.preventDefault();
+          alert("Můžete odeslat formulář pouze jednou za 3 hodiny.");
         }
       });
 
@@ -108,4 +122,5 @@
   </form>
 </body>
 </html>
+
 
