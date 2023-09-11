@@ -57,8 +57,8 @@
 </head>
 <body>
   <form
-    //action="https://formspree.io/f/xnqkvebl"
-    //method="POST"
+    action="https://formspree.io/f/xnqk"
+    method="POST"
   >
     <label>
       Váš email:
@@ -68,17 +68,44 @@
       Vaše požadavky:
       <textarea name="message" required></textarea>
     </label>
-    <!-- další pole formuláře zde -->
-    <button type="submit">Submit</button>
+    <!-- Další pole formuláře zde -->
+    <button type="submit" id="submit">Submit</button>
     <script type="text/javascript">
-        let count = 0;
-        let btn = document.getElementById("submit");
-        let disp = document.getElementById("display");
-        btn.addEventListener("click", function () {
-            count++;
-            disp.innerHTML = count;
-        });
+      let btn = document.getElementById("submit");
+      btn.addEventListener("click", function () {
+        if (!checkCookie("lastClick")) {
+          // Tlačítko nebylo stisknuto v posledních 3 hodinách
+          // Vložte kód pro odeslání formuláře nebo jinou akci
+
+          // Nastavte cookie pro poslední stisknutí tlačítka
+          setCookie("lastClick", new Date().toString(), 3);
+        } else {
+          // Tlačítko bylo stisknuto v posledních 3 hodinách, neuděláme nic
+          alert("Můžete stisknout tlačítko pouze jednou za 3 hodiny.");
+        }
+      });
+
+      // Funkce pro nastavení cookie
+      function setCookie(cname, cvalue, hours) {
+        var d = new Date();
+        d.setTime(d.getTime() + (hours * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      }
+
+      // Funkce pro zkontrolování existence cookie
+      function checkCookie(cname) {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+          var cookie = cookies[i].trim();
+          if (cookie.startsWith(cname + "=")) {
+            return true;
+          }
+        }
+        return false;
+      }
     </script>
   </form>
 </body>
 </html>
+
