@@ -56,57 +56,61 @@
   </style>
 </head>
 <body>
+    <h1>Kontaktujte nás</h1>
+
+    <form
+        action="https://formspree.io/f/xnqk"
+        method="POST"
+    >
+        <label>
+            Váš email:
+            <input type="email" name="email" required>
+        </label>
+        <label>
+            Vaše požadavky:
+            <textarea name="message" required></textarea>
+        </label>
+        <!-- Další pole formuláře zde -->
+        <button type="submit" id="submit">Odeslat</button>
+    </form>
+
     <script type="text/javascript">
-      let btn = document.getElementById("submit");
-      btn.addEventListener("click", function (event) {
-        if (!checkCookie("formSubmitted")) {
-          // Tlačítko nebylo stisknuto v posledních 3 hodinách
-          // Vložte kód pro odeslání formuláře
-          // Nastavte cookie pro označení, že formulář byl odeslán
-          <form
-    action="https://formspree.io/f/xnqk"
-    method="POST"
-  >
-    <label>
-      Váš email:
-      <input type="email" name="email" required>
-    </label>
-    <label>
-      Vaše požadavky:
-      <textarea name="message" required></textarea>
-    </label>
-    <!-- Další pole formuláře zde -->
-    <button type="submit" id="submit">Odeslat</button>
-          setCookie("formSubmitted", "true", 3);
-        } else {
-          // Tlačítko bylo stisknuto v posledních 3 hodinách, zabraňte odeslání formuláře
-          event.preventDefault();
-          alert("Můžete odeslat formulář pouze jednou za 3 hodiny.");
-        }
-      });
+        let btn = document.getElementById("submit");
+        btn.addEventListener("click", function (event) {
+            if (!checkCookie("formSubmitted")) {
+                // Tlačítko nebylo stisknuto v posledních 3 hodinách
+                // Vložte kód pro odeslání formuláře
+                // Nastavte cookie pro označení, že formulář byl odeslán
+                setCookie("formSubmitted", "true", 3);
+            } else {
+                // Tlačítko bylo stisknuto v posledních 3 hodinách, zabraňte odeslání formuláře
+                event.preventDefault();
+                alert("Můžete odeslat formulář pouze jednou za 3 hodiny.");
+            }
+        });
 
-      // Funkce pro nastavení cookie
-      function setCookie(cname, cvalue, hours) {
-        var d = new Date();
-        d.setTime(d.getTime() + (hours * 60 * 60 * 1000));
-        var expires = "expires=" + d.toUTCString();
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-      }
-
-      // Funkce pro zkontrolování existence cookie
-      function checkCookie(cname) {
-        var cookies = document.cookie.split(';');
-        for (var i = 0; i < cookies.length; i++) {
-          var cookie = cookies[i].trim();
-          if (cookie.startsWith(cname + "=")) {
-            return true;
-          }
+        // Funkce pro nastavení cookie
+        function setCookie(cname, cvalue, hours) {
+            var d = new Date();
+            d.setTime(d.getTime() + (hours * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
         }
-        return false;
-      }
+
+        // Funkce pro zkontrolování existence cookie
+        function checkCookie(cname) {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].trim();
+                if (cookie.startsWith(cname + "=")) {
+                    return true;
+                }
+            }
+            return false;
+        }
     </script>
-  </form>
 </body>
 </html>
+
 
 
