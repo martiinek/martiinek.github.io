@@ -56,7 +56,7 @@ export const About: React.FC = () => {
               </div>
               
              <p>
-                Nyní se snažím rozvíjet jak v rámci akademického studia, tak i prostřednictvím vlastních projektů a experimentů (viz 
+                Nyní se snažím rozvíjet jak v rámci akademického studia, tak i prostřednictvím vlastních projektů a experimentů (viz{" "} 
                 <a href="https://martiinek.github.io/#projects" className="text-orange-600 font-bold hover:underline">
                   níže
                 </a>).
