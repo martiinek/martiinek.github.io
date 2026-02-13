@@ -20,9 +20,9 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
             <a 
               key={link.name} 
               href={link.href} 
-              className="group relative mono text-[10px] uppercase tracking-[0.2em] text-gray-500 hover:text-black transition-colors"
+              className="group relative mono text-[12px] uppercase tracking-[0.2em] text-gray-500 hover:text-black transition-colors"
             >
-              <span className="relative z-10">{link.name}</span>
+              <span className="relative z-12">{link.name}</span>
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
