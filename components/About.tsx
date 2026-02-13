@@ -19,15 +19,15 @@ export const About: React.FC = () => {
             <div className="space-y-4">
               <div className="flex justify-between mono text-[10px]">
                 <span className="text-gray-400 uppercase font-bold">Core:</span>
-                <span className="text-orange-600">EMBEDDED_DEV</span>
+                <span className="text-orange-600">PASSION_TO_BUILD</span>
               </div>
               <div className="flex justify-between mono text-[10px]">
                 <span className="text-gray-400 uppercase font-bold">Input:</span>
-                <span className="text-amber-600">FEKT_VUT_CZ</span>
+                <span className="text-amber-600">NEW_IDEAS</span>
               </div>
               <div className="flex justify-between mono text-[10px]">
                 <span className="text-gray-400 uppercase font-bold">Focus:</span>
-                <span className="text-red-600">SYSTEMS_EMERGENCE</span>
+                <span className="text-red-600">HAVING_FUN</span>
               </div>
             </div>
           </div>
@@ -41,34 +41,33 @@ export const About: React.FC = () => {
             
             <div className="prose prose-xl text-gray-600 font-light leading-snug space-y-6">
               <p>
-                Studuji na FEKT VUT, ale můj zájem sahá za hranice učebnic. Vidím svět jako soubor propojených systémů – od tranzistorů v ESP32 po emergentní chování trhů a lidské mysli.
-              </p>
+                Jsem studentem 1. ročníku oboru Elektronika a komunikační technologie na Fakultě elektrotechniky a komunikačních technologií VUT v Brně. 
               
               <div className="p-8 border border-gray-100 bg-white/70 backdrop-blur-md mono text-base shadow-sm leading-relaxed italic rounded-2xl relative">
                 <div className="absolute top-0 left-0 w-1 h-full bg-orange-500 rounded-l-2xl"></div>
                 <span className="text-gray-500">
-                  Zajímá mě suverenita. Hardware, který vlastníš. Kód, který můžeš číst. Systémy, které nepotřebují prostředníka. 3D tisk a PET recyklace jsou pro mě nástroje fyzické nezávislosti.
+                  První důležitá pro mě nastal v 15 letech, kdy jsem se poprvé setkal s platformou Arduino. Byl jsem okamžitě okouzlen možnostmi, které nabízí a začal jsem se věnovat vývoji vlastních elektronických projektů. S postupem času jsem se začal zajímat o pokročilejší platformy, jako jsou STM32 a ESP32, a rozšiřoval své znalosti v oblasti embedded systémů a IoT. Mezi další důležíté události pro mě bylo pořízení první 3D tiskárny, která mi umožnila přenést mé projekty z digitálního světa do fyzické podoby. Postupně se rozšiřující výbava mé laboratoře mi umožnila realizovat stále složitější a ambicióznější projekty a dala prostor k učení se z experimentů a chyb.
                 </span>
               </div>
               
               <p>
-                Filozofie mě naučila, že vnímání je konstrukt. Technika mi dává možnost ten konstrukt modifikovat, měřit a rozšiřovat.
+                Nyní se snažím rozvíjet jak v rámci akademického studia, tak i prostřednictvím vlastních projektů a experimentů.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
               <div className="p-6 border border-gray-100 bg-white/70 backdrop-blur-md hover:border-orange-500 transition-all group rounded-2xl shadow-sm hover:shadow-md">
-                <div className="mono text-[9px] text-orange-600 mb-4 uppercase tracking-widest font-bold">Technologický zásobník</div>
+                <div className="mono text-[9px] text-orange-600 mb-4 uppercase tracking-widest font-bold">Oblasti zájmu</div>
                 <div className="flex flex-wrap gap-2 text-xs mono">
-                  {['STM32', 'ESP32', 'FreeRTOS', 'Python', 'C/C++', 'CAD', 'PCB'].map(t => (
+                  {['Embedded systems', 'Linux', 'Matlab', 'Python', 'C/C++', 'Git', 'CAD', 'PCB design'].map(t => (
                     <span key={t} className="px-2 py-1 bg-white border border-gray-100 rounded-lg group-hover:border-orange-200 transition-colors">+{t}</span>
                   ))}
                 </div>
               </div>
               <div className="p-6 border border-gray-100 bg-white/70 backdrop-blur-md hover:border-amber-400 transition-all group rounded-2xl shadow-sm hover:shadow-md">
-                <div className="mono text-[9px] text-amber-600 mb-4 uppercase tracking-widest font-bold">Filozofické moduly</div>
+                <div className="mono text-[9px] text-amber-600 mb-4 uppercase tracking-widest font-bold">Cíle</div>
                 <div className="flex flex-wrap gap-2 text-xs mono">
-                  {['Decentralizace', 'Emergence', 'Vědomí', 'Sovereignty'].map(t => (
+                  {['Nezávislost', 'Růst', 'Vzdělávání', 'Efektivita'].map(t => (
                     <span key={t} className="px-2 py-1 bg-white border border-gray-100 rounded-lg group-hover:border-amber-200 transition-colors">*{t}</span>
                   ))}
                 </div>
