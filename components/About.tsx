@@ -41,12 +41,13 @@ export const About: React.FC = () => {
             
             <div className="prose prose-xl text-gray-600 font-light leading-snug space-y-6">
               <p>
-                Jsem studentem 1. ročníku oboru Elektronika a komunikační technologie na Fakultě elektrotechniky a komunikačních technologií VUT v Brně. 
-              
+                Jsem studentem 1. ročníku oboru Elektronika a komunikační technologie na Fakultě elektrotechniky a komunikačních technologií VUT v Brně.
+              </p>
+
               <div className="p-8 border border-gray-100 bg-white/70 backdrop-blur-md mono text-base shadow-sm leading-relaxed italic rounded-2xl relative">
                 <div className="absolute top-0 left-0 w-1 h-full bg-orange-500 rounded-l-2xl"></div>
                 <span className="text-gray-500">
-                  První důležitá pro mě nastal v 15 letech, kdy jsem se poprvé setkal s platformou Arduino. Byl jsem okamžitě okouzlen možnostmi, které nabízí a začal jsem se věnovat vývoji vlastních elektronických projektů. S postupem času jsem se začal zajímat o pokročilejší platformy, jako jsou STM32 a ESP32, a rozšiřoval své znalosti v oblasti embedded systémů a IoT. Mezi další důležíté události pro mě bylo pořízení první 3D tiskárny, která mi umožnila přenést mé projekty z digitálního světa do fyzické podoby. Postupně se rozšiřující výbava mé laboratoře mi umožnila realizovat stále složitější a ambicióznější projekty a dala prostor k učení se z experimentů a chyb.
+                  První důležitý zlom u mě nastal v 15 letech, kdy jsem se poprvé setkal s platformou Arduino. Okamžitě mě okouzlily možnosti, které nabízí, a začal jsem vyvíjet vlastní elektronické projekty. Postupně jsem přešel k pokročilejším platformám, jako jsou STM32 a ESP32, a rozšířil své znalosti v oblasti embedded systémů a IoT. Mezi další důležité milníky patřilo pořízení první 3D tiskárny, která mi umožnila převést mé projekty z digitálního světa do fyzické podoby. Postupně se rozšiřující vybavení mé laboratoře mi umožnilo realizovat stále složitější a ambicióznější projekty a dalo mi prostor učit se z experimentů a chyb.
                 </span>
               </div>
               
