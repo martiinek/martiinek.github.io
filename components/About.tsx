@@ -12,8 +12,9 @@ export const About: React.FC = () => {
             <h2 className="mono text-sm font-bold uppercase tracking-tighter mb-4 text-orange-600">
               [01_MANIFESTO]
             </h2>
-            <div className="mono text-[10px] text-gray-500 leading-relaxed mb-8">
-              "Kdo chce, hledá způsoby. Kdo nechce, hledá důvody." 
+           <div className="mono text-[10px] text-gray-500 leading-relaxed mb-8">
+              "Kdo chce, hledá způsoby. Kdo nechce, hledá důvody."
+              <br />
               —J. Werich
             </div>
             <div className="w-full h-[1px] bg-gray-100 mb-8"></div>
@@ -49,7 +50,7 @@ export const About: React.FC = () => {
                 <div className="absolute top-0 left-0 w-1 h-full bg-orange-500 rounded-l-2xl"></div>
                 <span className="text-gray-500">
                   K elektru jsem se více dostal v 15 letech, kdy jsem poprvé objevil platformu Arduino. Okamžitě mě nadchly možnosti, které nabízí, a začal jsem tvořit vlastní jednoduché projekty. Postupně jsem přešel na pokročilejší platformy, jako jsou ESP32, Raspberry Pi a STM32, a dál si rozšiřoval znalosti v oblasti embedded systémů a IoT.
-
+                  <br />
                   Velkým krokem pro mě bylo také pořízení první 3D tiskárny, díky které jsem mohl své nápady převádět z digitálního světa do fyzické podoby. S postupně se rozšiřujícím vybavením mé malé laboratoře jsem mohl realizovat stále složitější a ambicióznější projekty a hlavně měl možnost se učit prostřednictvím experimentů a vlastních chyb, což mi dalo nejvíce.
                   </span>
               </div>
