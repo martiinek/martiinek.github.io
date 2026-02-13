@@ -13,7 +13,8 @@ export const About: React.FC = () => {
               [01_MANIFESTO]
             </h2>
             <div className="mono text-[10px] text-gray-500 leading-relaxed mb-8">
-              "Kdo chce, hledá způsoby. Kdo nechce, hledá důvody." —J. Werich
+              "Kdo chce, hledá způsoby. Kdo nechce, hledá důvody." 
+              —J. Werich
             </div>
             <div className="w-full h-[1px] bg-gray-100 mb-8"></div>
             <div className="space-y-4">
