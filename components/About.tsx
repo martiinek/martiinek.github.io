@@ -52,7 +52,7 @@ export const About: React.FC = () => {
               </div>
               
               <p>
-                Psychedelická filozofie mě naučila, že vnímání je konstrukt. Technika mi dává možnost ten konstrukt modifikovat, měřit a rozšiřovat.
+                Filozofie mě naučila, že vnímání je konstrukt. Technika mi dává možnost ten konstrukt modifikovat, měřit a rozšiřovat.
               </p>
             </div>
 

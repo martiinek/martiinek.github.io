@@ -27,9 +27,9 @@ export const Hero: React.FC<HeroProps> = ({ scrollPos }) => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 max-w-xl leading-snug mb-8 font-light mono">
-            <span className="text-orange-500 opacity-70 font-bold">&gt;</span> Building autonomous hardware <br />
-            <span className="text-amber-500 opacity-70 font-bold">&gt;</span> Mapping architecture of consciousness <br />
-            <span className="text-red-500 opacity-70 font-bold">&gt;</span> VUT FEKT Electronics Engineer
+            <span className="text-orange-500 opacity-70 font-bold">&gt;</span> IoT, embedded systémy a robotika <br />
+            <span className="text-amber-500 opacity-70 font-bold">&gt;</span> Student EKT na FEKT VUT <br />
+            <span className="text-red-500 opacity-70 font-bold">&gt;</span> Usnadnění každodenního života skrze technologie
           </p>
           
           <div className="flex items-center gap-4 mono text-[10px] text-gray-400">

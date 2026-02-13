@@ -13,13 +13,12 @@ export const Contact: React.FC = () => {
           <span className="gradient-text">Napište mi.</span>
         </h3>
         <p className="text-gray-500 mb-12 font-light text-lg max-w-xl mx-auto leading-relaxed">
-          Vždy rád proberu nové systémy, filozofii nebo zajímavý hardware. 
-          Najdete mě tam, kde se <span className="text-orange-600 font-bold">tvoří</span>.
+          Rád poznám další nadšence do technologií, proberu zajímavé projekty a nápady. Podjďmě <span className="text-orange-600 font-bold">společně vytvořit</span> svět, ve kterém chceme žít.
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
           <a 
-            href="mailto:example@vut.cz" 
+            href="mailto:martipu007@hotmail.com" 
             className="group mono text-[11px] font-bold uppercase tracking-[0.2em] px-8 py-3 bg-black text-white rounded-full hover:bg-orange-600 transition-all shadow-lg hover:shadow-orange-200"
           >
             Email
