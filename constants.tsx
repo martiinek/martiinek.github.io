@@ -18,7 +18,7 @@ export const PROJECTS: Project[] = [
     technologies: ['C++', 'ESP32', 'FreeRTOS', 'PID Control', 'NRF24L01', 'Bluetooth'],
     learning: 'Implementace PID regulace v reálném čase a správa úloh v RTOS prostředí. Pochopení důležitosti eliminace šumu ze senzorů (IMU, Barometr) pro stabilní let.',
     link: 'https://github.com/martiinek/ESP32-Drone-Flight-Controller'
-  }
+  },
 {
     id: 'autonomous-mapping-car',
     title: 'Autonomní mapovací vozítko',
