@@ -50,7 +50,7 @@ export const Hero: React.FC<HeroProps> = ({ scrollPos }) => {
               <div className="aspect-square bg-gray-100 overflow-hidden relative group rounded-2xl">
               <div 
                 className="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
-                style={{ backgroundImage: 'url("/profile_picture.jpg")' }}
+                style={{ backgroundImage: 'url("https://raw.githubusercontent.com/martiinek/martiinek.github.io/refs/heads/main/profile_picture.jpg")' }}
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-amber-500/20 mix-blend-overlay"></div>
               <div className="absolute top-0 left-0 w-full h-[2px] bg-white shadow-[0_0_15px_rgba(255,255,255,1)] animate-[scan_3s_ease-in-out_infinite]"></div>
