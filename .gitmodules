@@ -1,3 +1,0 @@
-[submodule ".well-known"]
-	path = .well-known
-	url = https://github.com/martiinek/.well-known
