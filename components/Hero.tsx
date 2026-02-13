@@ -5,7 +5,6 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({ scrollPos }) => {
-  const photoUrl = `${import.meta.env.BASE_URL}martin.jpg`;
   return (
     <section className="min-h-screen flex items-center justify-center relative px-6 overflow-hidden">
       {/* Background coordinates overlay */}
@@ -48,10 +47,10 @@ export const Hero: React.FC<HeroProps> = ({ scrollPos }) => {
             <div className="absolute -top-4 -right-4 mono text-[10px] text-white font-bold bg-orange-600 px-3 py-1 shadow-lg">
               SYNC_MODULE
             </div>
-            <div className="aspect-[3/4] bg-gray-100 overflow-hidden relative group rounded-2xl">
+              <div className="aspect-square bg-gray-100 overflow-hidden relative group rounded-2xl">
               <div 
                 className="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
-                style={{ backgroundImage: `url("${photoUrl}"), url("https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&q=80&w=1000")` }}
+                style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1555664424-778a1e5e1b48?auto=format&fit=crop&q=80&w=1000")' }}
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-amber-500/20 mix-blend-overlay"></div>
               <div className="absolute top-0 left-0 w-full h-[2px] bg-white shadow-[0_0_15px_rgba(255,255,255,1)] animate-[scan_3s_ease-in-out_infinite]"></div>
