@@ -68,7 +68,7 @@ export const Projects: React.FC = () => {
       </div>
       
       <div className="mt-16 text-center">
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="inline-block mono text-[11px] font-bold border-2 border-black px-12 py-4 hover:bg-black hover:text-white transition-all uppercase tracking-[0.2em] relative group overflow-hidden rounded-full">
+        <a href="https://github.com/martiinek?tab=repositories" target="_blank" rel="noopener noreferrer" className="inline-block mono text-[11px] font-bold border-2 border-black px-12 py-4 hover:bg-black hover:text-white transition-all uppercase tracking-[0.2em] relative group overflow-hidden rounded-full">
           <span className="relative z-10">Fetch_all_repositories.sh</span>
           <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-amber-500 translate-y-full group-hover:translate-y-0 transition-transform duration-300 opacity-20"></div>
         </a>

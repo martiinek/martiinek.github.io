@@ -13,7 +13,7 @@ export const About: React.FC = () => {
               [01_MANIFESTO]
             </h2>
             <div className="mono text-[10px] text-gray-500 leading-relaxed mb-8">
-              "Když stavím hardware, nepoužívám jen nástroje. Formuji hranici mezi pozorovaným a pozorovatelem."
+              "Kdo chce, hledá způsoby. Kdo nechce, hledá důvody." —J. Werich
             </div>
             <div className="w-full h-[1px] bg-gray-100 mb-8"></div>
             <div className="space-y-4">
@@ -47,12 +47,14 @@ export const About: React.FC = () => {
               <div className="p-8 border border-gray-100 bg-white/70 backdrop-blur-md mono text-base shadow-sm leading-relaxed italic rounded-2xl relative">
                 <div className="absolute top-0 left-0 w-1 h-full bg-orange-500 rounded-l-2xl"></div>
                 <span className="text-gray-500">
-                  První důležitý zlom u mě nastal v 15 letech, kdy jsem se poprvé setkal s platformou Arduino. Okamžitě mě okouzlily možnosti, které nabízí, a začal jsem vyvíjet vlastní elektronické projekty. Postupně jsem přešel k pokročilejším platformám, jako jsou STM32 a ESP32, a rozšířil své znalosti v oblasti embedded systémů a IoT. Mezi další důležité milníky patřilo pořízení první 3D tiskárny, která mi umožnila převést mé projekty z digitálního světa do fyzické podoby. Postupně se rozšiřující vybavení mé laboratoře mi umožnilo realizovat stále složitější a ambicióznější projekty a dalo mi prostor učit se z experimentů a chyb.
-                </span>
+                  K elektru jsem se více dostal v 15 letech, kdy jsem poprvé objevil platformu Arduino. Okamžitě mě nadchly možnosti, které nabízí, a začal jsem tvořit vlastní jednoduché projekty. Postupně jsem přešel na pokročilejší platformy, jako jsou ESP32, Raspberry Pi a STM32, a dál si rozšiřoval znalosti v oblasti embedded systémů a IoT.
+
+                  Velkým krokem pro mě bylo také pořízení první 3D tiskárny, díky které jsem mohl své nápady převádět z digitálního světa do fyzické podoby. S postupně se rozšiřujícím vybavením mé malé laboratoře jsem mohl realizovat stále složitější a ambicióznější projekty a hlavně měl možnost se učit prostřednictvím experimentů a vlastních chyb, což mi dalo nejvíce.
+                  </span>
               </div>
               
               <p>
-                Nyní se snažím rozvíjet jak v rámci akademického studia, tak i prostřednictvím vlastních projektů a experimentů.
+                Nyní se snažím rozvíjet jak v rámci akademického studia, tak i prostřednictvím vlastních projektů a experimentů (viz níže).
               </p>
             </div>
 
@@ -68,7 +70,7 @@ export const About: React.FC = () => {
               <div className="p-6 border border-gray-100 bg-white/70 backdrop-blur-md hover:border-amber-400 transition-all group rounded-2xl shadow-sm hover:shadow-md">
                 <div className="mono text-[9px] text-amber-600 mb-4 uppercase tracking-widest font-bold">Cíle</div>
                 <div className="flex flex-wrap gap-2 text-xs mono">
-                  {['Nezávislost', 'Růst', 'Vzdělávání', 'Efektivita'].map(t => (
+                  {['Nezávislost', 'Růst', 'Vzdělání', 'Efektivita'].map(t => (
                     <span key={t} className="px-2 py-1 bg-white border border-gray-100 rounded-lg group-hover:border-amber-200 transition-colors">*{t}</span>
                   ))}
                 </div>
