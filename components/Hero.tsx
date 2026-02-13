@@ -14,7 +14,7 @@ export const Hero: React.FC<HeroProps> = ({ scrollPos }) => {
 
       <div className="max-w-7xl w-full grid lg:grid-cols-12 gap-12 items-center relative z-10">
         
-        <div className="lg:col-span-8">
+        <div className="lg:col-span-7">
           <div className="mono text-[11px] font-bold text-orange-600 mb-6 flex items-center gap-4">
             <span className="px-2 py-0.5 border border-orange-600 bg-orange-50/50">INIT: MARTIN_PUSTKA</span>
             <span className="text-amber-500 font-bold">● ONLINE</span>
@@ -39,7 +39,7 @@ export const Hero: React.FC<HeroProps> = ({ scrollPos }) => {
           </div>
         </div>
 
-        <div className="lg:col-span-4 relative hidden lg:block">
+        <div className="lg:col-span-5 relative hidden lg:block">
           <div 
             className="relative p-3 border border-gray-200 bg-white shadow-[20px_20px_60px_rgba(0,0,0,0.05)] transition-transform duration-500"
             style={{ transform: `rotate(${scrollPos * 0.01}deg) translateY(${scrollPos * -0.03}px)` }}

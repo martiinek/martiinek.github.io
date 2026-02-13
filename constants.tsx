@@ -36,12 +36,12 @@ export const VALUES: Value[] = [
     icon: 'M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'
   },
   {
-    title: 'Automation',
+    title: 'Motivace',
     description: 'Největší motivací je pro mě vlastní potřeba. Navrhuji řešení, která mi v reálném životě šetří čas nebo usnadňují práci.',
     icon: 'M13 10V3L4 14h7v7l9-11h-7z'
   },
   {
-    title: 'Meaning of life',
+    title: 'Smysl',
     description: 'Věřím, že smyslem života je tvořit. Být tvůrcem pro mě znamená neustále formovat svět kolem sebe skrze kód, hardware a inovace.',
     icon: 'M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z'
   }
