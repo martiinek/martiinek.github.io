@@ -55,9 +55,12 @@ export const About: React.FC = () => {
                   </span>
               </div>
               
-              <p>
-                Nyní se snažím rozvíjet jak v rámci akademického studia, tak i prostřednictvím vlastních projektů a experimentů (viz níže).
-              </p>
+             <p>
+                Nyní se snažím rozvíjet jak v rámci akademického studia, tak i prostřednictvím vlastních projektů a experimentů (viz 
+                <a href="https://martiinek.github.io/#projects" className="text-orange-600 font-bold hover:underline">
+                  níže
+                </a>).
+          </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
