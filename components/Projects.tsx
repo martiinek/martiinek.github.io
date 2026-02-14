@@ -4,7 +4,7 @@ import { PROJECTS } from '../constants';
 
 export const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-24 border-t border-gray-100">
+    <section id="projects" className="py-24 border-t border-gray-800">
       <div className="mb-16 flex items-end justify-between reveal">
         <div>
           <h2 className="mono text-[11px] font-bold text-orange-500 mb-4 tracking-widest">[02_OUTPUT_LOG]</h2>
@@ -20,7 +20,7 @@ export const Projects: React.FC = () => {
         {PROJECTS.map((project, index) => (
           <div 
             key={project.id} 
-            className="group relative border border-gray-100 bg-white/70 backdrop-blur-md hover:border-gray-300 transition-all duration-300 p-8 reveal shadow-sm hover:shadow-xl rounded-2xl"
+            className="group relative border border-gray-800 bg-neutral-900/70 backdrop-blur-md hover:border-gray-700 transition-all duration-300 p-8 reveal shadow-sm hover:shadow-xl rounded-2xl"
           >
             <div className="grid lg:grid-cols-12 gap-8 items-center">
               <div className="lg:col-span-1 mono text-[10px] font-bold text-gray-300 group-hover:text-orange-500 transition-colors">
@@ -43,22 +43,22 @@ export const Projects: React.FC = () => {
                 </a>
                 <div className="flex flex-wrap gap-3 mt-4">
                   {project.technologies.map(tech => (
-                    <span key={tech} className="mono text-[9px] uppercase tracking-widest px-2 py-0.5 bg-white border border-gray-100 group-hover:border-orange-200 group-hover:text-orange-600 transition-all rounded-md">
+                    <span key={tech} className="mono text-[9px] uppercase tracking-widest px-2 py-0.5 bg-neutral-900 border border-gray-800 group-hover:border-orange-500 group-hover:text-orange-400 transition-all rounded-md">
                       [{tech}]
                     </span>
                   ))}
                 </div>
               </div>
 
-              <div className="lg:col-span-5 border-l border-gray-100 pl-8">
+              <div className="lg:col-span-5 border-l border-gray-800 pl-8">
                 <p className="text-gray-500 text-sm leading-relaxed mb-4 mono italic">
                   // {project.description}
                 </p>
                 <div className="hidden group-hover:block animate-in fade-in slide-in-from-left-2">
-                  <div className="border border-gray-100 bg-white p-4 rounded-2xl relative overflow-hidden">
+                  <div className="border border-gray-800 bg-neutral-900 p-4 rounded-2xl relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-1 h-full bg-orange-500"></div>
                     <span className="mono text-[9px] font-bold text-orange-600 block mb-1">LEARNING_INSIGHT:</span>
-                    <p className="text-xs text-gray-700 font-medium">{project.learning}</p>
+                    <p className="text-xs text-gray-300 font-medium">{project.learning}</p>
                   </div>
                 </div>
               </div>
@@ -68,7 +68,7 @@ export const Projects: React.FC = () => {
       </div>
       
       <div className="mt-16 text-center">
-        <a href="https://github.com/martiinek?tab=repositories" target="_blank" rel="noopener noreferrer" className="inline-block mono text-[11px] font-bold border-2 border-black px-12 py-4 hover:bg-black hover:text-white transition-all uppercase tracking-[0.2em] relative group overflow-hidden rounded-full">
+        <a href="https://github.com/martiinek?tab=repositories" target="_blank" rel="noopener noreferrer" className="inline-block mono text-[11px] font-bold border-2 border-white px-12 py-4 hover:bg-white hover:text-black transition-all uppercase tracking-[0.2em] relative group overflow-hidden rounded-full">
           <span className="relative z-10">Fetch_all_repositories.sh</span>
           <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-amber-500 translate-y-full group-hover:translate-y-0 transition-transform duration-300 opacity-20"></div>
         </a>

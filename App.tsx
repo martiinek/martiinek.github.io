@@ -125,7 +125,7 @@ const App: React.FC = () => {
         <div className="mono text-[8px] text-gray-300 vertical-text tracking-widest uppercase">
           System_Pointer: {activeSection}
         </div>
-        <div className="h-32 w-[1px] bg-gray-200 relative">
+        <div className="h-32 w-[1px] bg-gray-800 relative">
           <div 
             className="absolute top-0 left-0 w-full bg-orange-500 transition-all duration-300"
             style={{ height: `${(scrollPos / (document.documentElement.scrollHeight - window.innerHeight)) * 100}%` }}
@@ -148,7 +148,7 @@ const App: React.FC = () => {
         </div>
       </main>
 
-      <footer className="py-20 border-t border-gray-200 bg-white/50 backdrop-blur-sm px-10">
+      <footer className="py-20 border-t border-gray-800 bg-black/50 backdrop-blur-sm px-10">
         <div className="flex flex-col md:flex-row justify-between items-center mono text-[10px] text-gray-400 gap-4">
           <p className="flex items-center gap-2">
             <span className="w-1 h-1 rounded-full bg-orange-500 animate-pulse"></span>
