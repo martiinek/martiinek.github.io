@@ -2,8 +2,8 @@ import React from 'react';
 
 export const Contact: React.FC = () => {
   return (
-    <section id="contact" className="py-32 reveal">
-      <div className="max-w-3xl mx-auto text-center border border-gray-800 bg-neutral-900/70 backdrop-blur-md p-16 rounded-2xl shadow-2xl relative overflow-hidden">
+    <section id="contact" className="py-24 md:py-32 reveal">
+      <div className="max-w-3xl mx-auto text-center border border-gray-800 bg-neutral-900/70 backdrop-blur-md p-8 md:p-16 rounded-2xl shadow-2xl relative overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-to-r from-orange-500 via-amber-500 to-red-500"></div>
         
         <h2 className="mono text-[11px] font-bold uppercase tracking-[0.4em] text-orange-600 mb-8">
