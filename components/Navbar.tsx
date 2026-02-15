@@ -78,8 +78,7 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
       {/* Mobile dropdown merged into the navbar block */}
       <div
         id="mobile-menu"
-        className={`md:hidden transition-[max-height,opacity] duration-300 overflow-hidden bg-black/60 backdrop-blur-xl ${open ? 'max-h-[70vh] opacity-100' : 'max-h-0 opacity-0'}`}
-        style={{ WebkitBackdropFilter: 'blur(20px)' }}
+        className={`md:hidden transition-[max-height,opacity] duration-300 overflow-hidden bg-transparent ${open ? 'max-h-[70vh] opacity-100' : 'max-h-0 opacity-0'}`}
         ref={menuRef}
       >
         <div className="px-6 pt-3 pb-6 space-y-1">
