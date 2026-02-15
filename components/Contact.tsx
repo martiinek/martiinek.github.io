@@ -16,10 +16,10 @@ export const Contact: React.FC = () => {
           Rád poznám další nadšence do technologií nebo proberu zajímavé projekty a nápady. Podjďmě <span className="text-orange-600 font-bold">společně vytvořit</span> svět, ve kterém chceme žít.
         </p>
         
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-10">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-6 md:gap-10">
           <a 
             href="mailto:martipu007@hotmail.com" 
-            className="group mono text-[11px] font-bold uppercase tracking-[0.2em] px-8 py-3 bg-black text-white rounded-full hover:bg-orange-600 transition-all shadow-lg hover:shadow-orange-200"
+            className="group mono text-[11px] font-bold uppercase tracking-[0.2em] px-8 py-3 bg-black text-white rounded-full hover:bg-orange-600 transition-colors"
           >
             Email
           </a>
@@ -27,7 +27,7 @@ export const Contact: React.FC = () => {
             href="https://discord.com/users/1135544046526410862" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="group mono text-[11px] font-bold uppercase tracking-[0.2em] px-8 py-3 border-2 border-white rounded-full hover:bg-white hover:text-black transition-all"
+            className="group mono text-[11px] font-bold uppercase tracking-[0.2em] px-8 py-3 border border-gray-700 text-gray-200 rounded-full hover:border-orange-500 hover:text-white transition-colors"
           >
             Discord
           </a>

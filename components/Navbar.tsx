@@ -56,7 +56,7 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
         id="mobile-menu"
         className={`md:hidden transition-[max-height,opacity] duration-300 overflow-hidden ${open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
       >
-        <div className="px-6 pt-2 pb-6 space-y-2 border-t border-gray-800 bg-black/50 backdrop-blur-sm">
+        <div className="px-6 pt-2 pb-6 space-y-1 border-t border-gray-800 bg-black/50 backdrop-blur-sm">
           {links.map(link => (
             <a
               key={link.name}

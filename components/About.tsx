@@ -2,10 +2,10 @@ import React from 'react';
 
 export const About: React.FC = () => {
   return (
-    <section id="about" className="py-24 reveal relative">
+    <section id="about" className="py-16 md:py-24 reveal relative">
       <div className="absolute -left-24 top-0 w-64 h-64 bg-orange-400/10 rounded-full blur-[100px] pointer-events-none"></div>
       
-      <div className="grid lg:grid-cols-12 gap-16 items-start">
+      <div className="grid lg:grid-cols-12 gap-8 md:gap-16 items-start">
         <div className="lg:col-span-4">
           <div className="sticky top-32 p-10 border border-gray-800 bg-neutral-900/70 backdrop-blur-md shadow-sm rounded-2xl relative">
             <div className="absolute top-0 left-0 w-1 h-full bg-orange-500 rounded-l-2xl"></div>

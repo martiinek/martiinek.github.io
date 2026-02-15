@@ -39,7 +39,7 @@ export const Hero: React.FC<HeroProps> = ({ scrollPos }) => {
           </div>
         </div>
 
-        <div className="lg:col-span-5 relative hidden lg:block">
+        <div className="lg:col-span-5 relative block mt-10 md:mt-0">
           <div 
             className="relative p-3 border border-gray-800 bg-neutral-900 shadow-[20px_20px_60px_rgba(0,0,0,0.05)] transition-transform duration-500"
             style={{ transform: `rotate(${scrollPos * 0.01}deg) translateY(${scrollPos * -0.03}px)` }}
@@ -47,7 +47,7 @@ export const Hero: React.FC<HeroProps> = ({ scrollPos }) => {
             <div className="absolute -top-4 -right-4 mono text-[10px] text-white font-bold bg-orange-600 px-3 py-1 shadow-lg">
               SYNC_MODULE
             </div>
-              <div className="aspect-square bg-gray-800 overflow-hidden relative group rounded-2xl">
+              <div className="aspect-square bg-gray-800 overflow-hidden relative group rounded-2xl max-w-xs mx-auto md:max-w-none">
               <div 
                 className="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
                 style={{ backgroundImage: 'url("profile_picture.jpg")' }}

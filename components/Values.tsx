@@ -3,7 +3,7 @@ import { VALUES } from '../constants';
 
 export const Values: React.FC = () => {
   return (
-    <section id="values" className="py-24 reveal">
+    <section id="values" className="py-16 md:py-24 reveal">
       <div className="mb-16">
         <h2 className="mono text-[11px] font-bold text-orange-600 mb-4 tracking-widest">[03_CORE_PROTOCOL]</h2>
       </div>

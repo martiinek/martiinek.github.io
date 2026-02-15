@@ -4,8 +4,8 @@ import { PROJECTS } from '../constants';
 
 export const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-24 border-t border-gray-800">
-      <div className="mb-16 flex items-end justify-between reveal">
+    <section id="projects" className="py-16 md:py-24 border-t border-gray-800">
+      <div className="mb-10 md:mb-16 flex items-end justify-between reveal">
         <div>
           <h2 className="mono text-[11px] font-bold text-orange-500 mb-4 tracking-widest">[02_OUTPUT_LOG]</h2>
           <h3 className="text-4xl md:text-6xl font-bold tracking-tighter gradient-text">IMPLEMENTACE.</h3>
