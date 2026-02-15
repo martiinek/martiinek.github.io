@@ -21,15 +21,16 @@ export const Hero: React.FC<HeroProps> = ({ scrollPos }) => {
             <span className="animate-[blink_1s_infinite] text-red-500">_</span>
           </div>
           
-          <h1 className="text-[12vw] lg:text-[10rem] font-bold leading-[0.75] mb-6 md:mb-8 tracking-tighter">
-            MARTIN <br />
-            <span className="gradient-text animate-gradient-x">PUSTKA</span>
-          </h1>
-
-          {/* Status (mobile) positioned slightly lower, replacing INIT area */}
-          <div className="mono text-[11px] font-bold text-orange-600 mb-6 flex md:hidden items-center gap-3">
-            <span className="text-amber-500 font-bold">● ONLINE</span>
-            <span className="animate-[blink_1s_infinite] text-red-500">_</span>
+          <div className="relative">
+            <h1 className="text-[12vw] lg:text-[10rem] font-bold leading-[0.75] mb-6 md:mb-8 tracking-tighter">
+              MARTIN <br />
+              <span className="gradient-text animate-gradient-x">PUSTKA</span>
+            </h1>
+            {/* Status (mobile) positioned to the right of the name block */}
+            <div className="mono text-[11px] font-bold text-orange-600 md:hidden flex items-center gap-3 absolute right-0 top-2">
+              <span className="text-amber-500 font-bold">● ONLINE</span>
+              <span className="animate-[blink_1s_infinite] text-red-500">_</span>
+            </div>
           </div>
           
           <p className="text-xl md:text-2xl text-gray-300 max-w-xl leading-snug mb-8 font-light mono">
