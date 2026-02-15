@@ -54,17 +54,17 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
         </button>
       </div>
 
-      {/* Mobile dropdown */}
+      {/* Mobile dropdown (fixed overlay below navbar) */}
       <div
         id="mobile-menu"
-        className={`md:hidden transition-[max-height,opacity] duration-300 overflow-hidden ${open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+        className={`md:hidden fixed left-0 right-0 top-[56px] z-40 transition-[max-height,opacity] duration-300 overflow-hidden border-t border-gray-800 bg-black/60 backdrop-blur-xl ${open ? 'max-h-[70vh] opacity-100' : 'max-h-0 opacity-0'}`}
       >
-        <div className="px-6 pt-2 pb-6 space-y-1 border-t border-gray-800 bg-black/50 backdrop-blur-sm">
+        <div className="px-6 pt-3 pb-6 space-y-1">
           {links.map(link => (
             <a
               key={link.name}
               href={link.href}
-              className="block mono text-[13px] uppercase tracking-[0.15em] text-gray-300 hover:text-white py-2"
+              className="block mono text-[12px] uppercase tracking-[0.15em] text-gray-300 hover:text-white py-2"
               onClick={() => setOpen(false)}
             >
               {link.name}

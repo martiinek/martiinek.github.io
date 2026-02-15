@@ -36,17 +36,17 @@ export const About: React.FC = () => {
         </div>
 
         <div className="lg:col-span-8">
-          <div className="space-y-10">
+          <div className="space-y-8 md:space-y-10">
             <h3 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight uppercase">
               <span className="gradient-text">O MNĚ.</span>
             </h3>
             
-            <div className="prose prose-xl text-gray-300 font-light leading-snug space-y-6">
+            <div className="text-sm md:text-lg text-gray-300 font-light leading-relaxed md:leading-snug space-y-4 md:space-y-6">
               <p>
                 Jsem studentem 1. ročníku oboru Elektronika a komunikační technologie na Fakultě elektrotechniky a komunikačních technologií VUT v Brně.
               </p>
 
-              <div className="p-8 border border-gray-800 bg-neutral-900/70 backdrop-blur-md mono text-base shadow-sm leading-relaxed italic rounded-2xl relative">
+              <div className="p-6 md:p-8 border border-gray-800 bg-neutral-900/70 backdrop-blur-md mono text-sm md:text-base shadow-sm leading-relaxed italic rounded-2xl relative">
                 <div className="absolute top-0 left-0 w-1 h-full bg-orange-500 rounded-l-2xl"></div>
                 <span className="text-gray-300">
                   K elektru jsem se více dostal v 15 letech, kdy jsem poprvé objevil platformu Arduino. Okamžitě mě nadchly možnosti, které nabízí, a začal jsem tvořit vlastní jednoduché projekty. Postupně jsem přešel na pokročilejší platformy, jako jsou ESP32, Raspberry Pi a STM32, a dál si rozšiřoval znalosti v oblasti embedded systémů a IoT.
