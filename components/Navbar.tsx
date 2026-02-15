@@ -34,8 +34,9 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500
-        bg-black/70 backdrop-blur-xl border-b border-gray-800 shadow-sm py-3
+        bg-black/60 backdrop-blur-xl border-b border-gray-800 shadow-sm py-3
         ${scrolled ? 'md:bg-black/60 md:backdrop-blur-xl md:border-b md:py-4' : 'md:bg-transparent md:backdrop-blur-0 md:border-b-0 md:py-10'}`}
+      style={{ WebkitBackdropFilter: 'blur(20px)' }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-32 flex items-center justify-between">
         {/* Brand / Status */}
@@ -77,7 +78,8 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
       {/* Mobile dropdown merged into the navbar block */}
       <div
         id="mobile-menu"
-        className={`md:hidden transition-[max-height,opacity] duration-300 overflow-hidden bg-black/70 backdrop-blur-xl border-b border-gray-800 shadow-sm ${open ? 'max-h-[70vh] opacity-100' : 'max-h-0 opacity-0'}`}
+        className={`md:hidden transition-[max-height,opacity] duration-300 overflow-hidden bg-black/60 backdrop-blur-xl border-b border-gray-800 shadow-sm ${open ? 'max-h-[70vh] opacity-100' : 'max-h-0 opacity-0'}`}
+        style={{ WebkitBackdropFilter: 'blur(20px)' }}
         ref={menuRef}
       >
         <div className="px-6 pt-3 pb-6 space-y-1">
