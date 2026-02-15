@@ -19,17 +19,19 @@ export const Contact: React.FC = () => {
         <div className="flex flex-col sm:flex-row justify-center items-center gap-6 md:gap-10">
           <a 
             href="mailto:martipu007@hotmail.com" 
-            className="group mono text-[11px] font-bold uppercase tracking-[0.2em] px-8 py-3 bg-black text-white rounded-full hover:bg-orange-600 transition-colors"
+            className="inline-block mono text-[11px] font-bold border-2 border-white px-12 py-4 hover:bg-white hover:text-black transition-all uppercase tracking-[0.2em] relative group overflow-hidden rounded-full"
           >
-            Email
+            <span className="relative z-10">Email</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-amber-500 translate-y-full group-hover:translate-y-0 transition-transform duration-300 opacity-20"></div>
           </a>
           <a 
             href="https://discord.com/users/1135544046526410862" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="group mono text-[11px] font-bold uppercase tracking-[0.2em] px-8 py-3 border border-gray-700 text-gray-200 rounded-full hover:border-orange-500 hover:text-white transition-colors"
+            className="inline-block mono text-[11px] font-bold border-2 border-white px-12 py-4 hover:bg-white hover:text-black transition-all uppercase tracking-[0.2em] relative group overflow-hidden rounded-full"
           >
-            Discord
+            <span className="relative z-10">Discord</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-amber-500 translate-y-full group-hover:translate-y-0 transition-transform duration-300 opacity-20"></div>
           </a>
         </div>
 

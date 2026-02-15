@@ -7,8 +7,8 @@ interface HeroProps {
 export const Hero: React.FC<HeroProps> = ({ scrollPos }) => {
   return (
     <section className="min-h-screen flex items-center justify-center relative px-6 overflow-hidden">
-      {/* Background coordinates overlay */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.05] select-none">
+      {/* Background coordinates overlay (repositioned on mobile) */}
+      <div className="absolute md:inset-0 inset-x-0 top-[55vh] bottom-0 flex items-start md:items-center justify-center pointer-events-none opacity-[0.05] select-none">
         <span className="text-[25vw] font-bold mono uppercase tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-gray-400 to-transparent">Pustka</span>
       </div>
 

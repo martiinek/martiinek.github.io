@@ -14,7 +14,7 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'bg-black/60 backdrop-blur-xl border-b border-gray-800 py-4' : 'bg-transparent py-6 md:py-10'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 relative transition-all duration-500 ${scrolled ? 'bg-black/60 backdrop-blur-xl border-b border-gray-800 py-4' : 'bg-black/60 md:bg-transparent backdrop-blur-xl md:backdrop-blur-0 border-b border-gray-800 md:border-b-0 py-4 md:py-10'}`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-32 flex items-center justify-between">
         {/* Brand / Status */}
         <button
@@ -42,12 +42,15 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden mono text-[11px] font-bold uppercase tracking-[0.2em] px-4 py-2 border border-gray-700 rounded-lg text-gray-300 hover:text-white hover:border-orange-500 transition-colors"
+          className="md:hidden absolute right-4 top-3 mono text-[11px] font-bold uppercase tracking-[0.2em] px-3 py-2 border border-gray-700 rounded-lg text-gray-300 hover:text-white hover:border-orange-500 transition-colors bg-black/60 backdrop-blur-xl"
           aria-controls="mobile-menu"
           aria-expanded={open}
           onClick={() => setOpen(o => !o)}
+          aria-label="Toggle menu"
         >
-          Menu
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
         </button>
       </div>
 
