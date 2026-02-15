@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 interface NavbarProps {
   scrolled: boolean;
@@ -6,12 +6,30 @@ interface NavbarProps {
 
 export const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
   const [open, setOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement | null>(null);
+  const buttonRef = useRef<HTMLButtonElement | null>(null);
   const links = [
     { name: 'O MNĚ', href: '#about' },
     { name: 'PROJEKTY', href: '#projects' },
     { name: 'HODNOTY', href: '#values' },
     { name: 'KONTAKT', href: '#contact' },
   ];
+
+  // Close mobile menu on outside click
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (!open) return;
+      const target = e.target as Node;
+      if (
+        menuRef.current && !menuRef.current.contains(target) &&
+        buttonRef.current && !buttonRef.current.contains(target)
+      ) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [open]);
 
   return (
     <nav
@@ -48,6 +66,7 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
           aria-expanded={open}
           onClick={() => setOpen(o => !o)}
           aria-label="Toggle menu"
+          ref={buttonRef}
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -58,14 +77,15 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
       {/* Mobile dropdown (fixed overlay below navbar) */}
       <div
         id="mobile-menu"
-        className={`md:hidden fixed left-0 right-0 top-14 z-40 transition-[max-height,opacity] duration-300 overflow-hidden border-t border-gray-800 bg-black/60 backdrop-blur-xl ${open ? 'max-h-[70vh] opacity-100' : 'max-h-0 opacity-0'}`}
+        className={`md:hidden fixed left-0 right-0 top-14 z-40 transition-[max-height,opacity] duration-300 overflow-hidden border-t border-gray-800 bg-black/80 backdrop-blur-xl ${open ? 'max-h-[70vh] opacity-100' : 'max-h-0 opacity-0'}`}
+        ref={menuRef}
       >
         <div className="px-6 pt-3 pb-6 space-y-1">
           {links.map(link => (
             <a
               key={link.name}
               href={link.href}
-              className="block mono text-[12px] uppercase tracking-[0.15em] text-gray-300 hover:text-white py-2"
+              className="block mono text-[12px] uppercase tracking-[0.15em] text-gray-300 hover:text-white py-2 px-3 rounded bg-black/60 hover:bg-black/70"
               onClick={() => setOpen(false)}
             >
               {link.name}
