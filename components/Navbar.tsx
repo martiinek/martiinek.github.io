@@ -40,8 +40,8 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-32 flex items-center justify-between">
         {/* Brand / Status */}
-        {/* Mobile brand/status */}
-        <div className="flex md:flex items-center gap-2 mono text-[10px] text-orange-600 font-bold">
+        {/* Brand/status label: small on mobile, larger on desktop */}
+        <div className="flex items-center gap-2 mono text-[10px] md:text-[14px] text-orange-600 font-bold tracking-[0.15em] md:tracking-[0.2em] uppercase">
           <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse"></span>
           MENU
         </div>
@@ -81,7 +81,7 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
         className={`md:hidden transition-[max-height,opacity] duration-300 overflow-hidden bg-transparent ${open ? 'max-h-[70vh] opacity-100' : 'max-h-0 opacity-0'}`}
         ref={menuRef}
       >
-        <div className="px-6 pt-3 pb-6 space-y-1">
+        <div className="px-6 mt-2 pt-4 pb-8 space-y-2">
           {links.map(link => (
             <a
               key={link.name}

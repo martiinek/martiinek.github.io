@@ -33,7 +33,7 @@ export const Hero: React.FC<HeroProps> = ({ scrollPos }) => {
             </div>
           </div>
           
-          <p className="text-xl md:text-2xl text-gray-300 max-w-xl leading-snug mb-8 font-light mono">
+          <p className="text-base md:text-2xl text-gray-300 max-w-xl leading-snug mb-8 font-light mono">
             <span className="text-orange-500 opacity-70 font-bold">&gt;</span> IoT, embedded systémy a robotika <br />
             <span className="text-amber-500 opacity-70 font-bold">&gt;</span> Student EKT na FEKT VUT <br />
             <span className="text-red-500 opacity-70 font-bold">&gt;</span> Usnadnění života skrze technologie
