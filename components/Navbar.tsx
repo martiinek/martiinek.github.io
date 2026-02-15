@@ -14,17 +14,18 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 relative transition-all duration-500 ${scrolled ? 'bg-black/60 backdrop-blur-xl border-b border-gray-800 py-4' : 'bg-black/60 md:bg-transparent backdrop-blur-xl md:backdrop-blur-0 border-b border-gray-800 md:border-b-0 py-4 md:py-10'}`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500
+        bg-black/70 backdrop-blur-xl border-b border-gray-800 shadow-sm py-3
+        ${scrolled ? 'md:bg-black/60 md:backdrop-blur-xl md:border-b md:py-4' : 'md:bg-transparent md:backdrop-blur-0 md:border-b-0 md:py-10'}`}
+    >
       <div className="max-w-7xl mx-auto px-6 lg:px-32 flex items-center justify-between">
         {/* Brand / Status */}
-        <button
-          className="mono text-[9px] text-orange-600 font-bold hidden sm:flex items-center gap-2"
-          aria-hidden="true"
-          tabIndex={-1}
-        >
+        {/* Mobile brand/status */}
+        <div className="flex md:flex items-center gap-2 mono text-[10px] text-orange-600 font-bold">
           <span className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse"></span>
-          SYS_ONLINE
-        </button>
+          MENU
+        </div>
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center space-x-8 md:space-x-12">
@@ -42,7 +43,7 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden absolute right-4 top-3 mono text-[11px] font-bold uppercase tracking-[0.2em] px-3 py-2 border border-gray-700 rounded-lg text-gray-300 hover:text-white hover:border-orange-500 transition-colors bg-black/60 backdrop-blur-xl"
+          className="md:hidden absolute right-4 top-2 mono text-[11px] font-bold uppercase tracking-[0.2em] px-3 py-2 border border-gray-700 rounded-lg text-gray-300 hover:text-white hover:border-orange-500 transition-colors bg-black/60 backdrop-blur-xl"
           aria-controls="mobile-menu"
           aria-expanded={open}
           onClick={() => setOpen(o => !o)}
@@ -57,7 +58,7 @@ export const Navbar: React.FC<NavbarProps> = ({ scrolled }) => {
       {/* Mobile dropdown (fixed overlay below navbar) */}
       <div
         id="mobile-menu"
-        className={`md:hidden fixed left-0 right-0 top-[56px] z-40 transition-[max-height,opacity] duration-300 overflow-hidden border-t border-gray-800 bg-black/60 backdrop-blur-xl ${open ? 'max-h-[70vh] opacity-100' : 'max-h-0 opacity-0'}`}
+        className={`md:hidden fixed left-0 right-0 top-14 z-40 transition-[max-height,opacity] duration-300 overflow-hidden border-t border-gray-800 bg-black/60 backdrop-blur-xl ${open ? 'max-h-[70vh] opacity-100' : 'max-h-0 opacity-0'}`}
       >
         <div className="px-6 pt-3 pb-6 space-y-1">
           {links.map(link => (
