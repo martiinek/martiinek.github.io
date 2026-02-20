@@ -13,7 +13,7 @@ export const Contact: React.FC = () => {
           <span className="gradient-text">Napište mi.</span>
         </h3>
         <p className="text-gray-400 mb-12 font-light text-lg max-w-xl mx-auto leading-relaxed">
-          Rád poznám další nadšence do technologií nebo proberu zajímavé projekty a nápady. Podjďmě <span className="text-orange-600 font-bold">společně vytvořit</span> svět, ve kterém chceme žít.
+          Rád poznám další nadšence do technologií nebo proberu zajímavé projekty a nápady. Pojďme <span className="text-orange-600 font-bold">společně vytvořit</span> svět, ve kterém chceme žít.
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center items-center gap-6 md:gap-10">
