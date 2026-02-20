@@ -1,2 +1,40 @@
 [
+  {
+    "id": "esp32-drone-flight-controller",
+    "title": "Arduino letový ovladač pro dron",
+    "description": "Tento projekt představuje Arduino letový ovladač pro drony, postavený na mikrokontroléru ESP32. Využívá senzory pro sběr dat, NRF24L01 pro rádiovou komunikaci s dálkovým ovládáním a Bluetooth pro ladění parametrů. Řídicí jednotka implementuje PID regulaci pro stabilní řízení čtyř motorů, s paralelním zpracováním úloh pomocí FreeRTOS.",
+    "technologies": [
+      "C++",
+      "Arduino",
+      "ESP32",
+      "NRF24L01",
+      "Bluetooth",
+      "PID Control",
+      "FreeRTOS",
+      "I2C",
+      "SPI"
+    ],
+    "learning": "Autor mohl získat cenné zkušenosti s implementací a laděním PID regulace v reálném čase a s efektivním využitím FreeRTOS pro paralelní zpracování úloh na embedded systému.",
+    "link": "https://github.com/martiinek/ESP32-Drone-Flight-Controller"
+  },
+  {
+    "id": "ardupi-car",
+    "title": "Autonomní mapovací auto",
+    "description": "Projekt ArduPi-Car se zaměřuje na vývoj autonomního vozidla schopného navigace a tvorby 2D mapy prostředí. Využívá kombinaci Arduina pro řízení motorů a senzorů a Raspberry Pi pro zpracování dat z kamery, ultrazvukového senzoru a kompasu, s komunikací přes UART. Cílem je vytvořit jednoduchou 2D mapu prozkoumané oblasti s využitím algoritmů pro detekci překážek a optimální cestu.",
+    "technologies": [
+      "Python",
+      "C++",
+      "Arduino",
+      "Raspberry Pi",
+      "UART",
+      "Ultrasonic Sensor",
+      "IR Encoders",
+      "Camera",
+      "Compass",
+      "DC Motors",
+      "L293D"
+    ],
+    "learning": "Autor projektu mohl získat cenné zkušenosti s implementací a laděním nízkoúrovňové sériové komunikace (UART) mezi mikrokontrolérem Arduino a jednodeskovým počítačem Raspberry Pi pro efektivní řízení hardwaru a zpracování senzorických dat.",
+    "link": "https://github.com/martiinek/ArduPi-Car"
+  }
 ]
