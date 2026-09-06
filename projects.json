@@ -1,8 +1,8 @@
 [
   {
-    "id": "esp32-drone-flight-controller",
+    "id": "esp32-drone-controller",
     "title": "Arduino letový kontrolér pro dron",
-    "description": "Tento projekt představuje Arduino letový kontrolér navržený pro řízení dronu s mikrokontrolérem ESP32. Využívá PID regulaci pro stabilizaci letu, čtení dat ze senzorů a komunikaci s dálkovým ovládáním přes NRF24L01. Parametry lze ladit pomocí Bluetooth, přičemž paralelní zpracování úloh je zajištěno pomocí FreeRTOS.",
+    "description": "Tento projekt představuje letový kontrolér pro dron postavený na mikrokontroléru ESP32. Využívá PID regulaci pro stabilizaci letu na základě dat ze senzorů a komunikuje s dálkovým ovládáním přes NRF24L01, zatímco Bluetooth slouží pro ladění parametrů. Paralelní zpracování úloh je zajištěno pomocí FreeRTOS.",
     "technologies": [
       "C++",
       "Arduino",
@@ -12,25 +12,25 @@
       "Bluetooth",
       "FreeRTOS",
       "I2C",
-      "SPI",
-      "BME280",
-      "HMC5883"
+      "SPI"
     ],
-    "learning": "Autor pravděpodobně získal zkušenosti s efektivním využitím FreeRTOS úloh na ESP32 pro paralelní zpracování dat ze senzorů a komunikace (NRF24L01, Bluetooth), což je klíčové pro real-time systémy jako letové kontroléry.",
+    "learning": "Autor mohl získat cenné zkušenosti s implementací a laděním PID regulace pro stabilizaci letu, stejně jako s paralelním zpracováním úloh (FreeRTOS) pro efektivní správu senzorů a komunikace na mikrokontroléru ESP32.",
     "link": "https://github.com/martiinek/ESP32-Drone-Flight-Controller"
   },
   {
     "id": "ardupi-car",
     "title": "Autonomní mapovací auto",
-    "description": "Projekt ArduPi-Car představuje autonomní mapovací vozidlo, které integruje Arduino a Raspberry Pi pro navigaci a tvorbu 2D map prostředí. Systém využívá různé senzory pro detekci překážek a sběr dat, přičemž komunikace mezi oběma platformami probíhá přes UART. Cílem je postupné prozkoumávání a mapování neznámého terénu s využitím jednoduchých algoritmů.",
+    "description": "Tento projekt se zabývá konstrukcí autonomního mapovacího automobilu, který je poháněn platformami Arduino a Raspberry Pi. Systém využívá různé senzory a komponenty pro navigaci a vytváření 2D mapy prostředí. Klíčová je sériová komunikace mezi Arduinem a Raspberry Pi, zpracování dat ze senzorů a implementace jednoduchého mapovacího algoritmu.",
     "technologies": [
       "Python",
       "C++",
       "Arduino",
       "Raspberry Pi",
-      "UART"
+      "UART",
+      "Senzory",
+      "Computer Vision"
     ],
-    "learning": "Autor projektu mohl získat hluboké zkušenosti s implementací a laděním sériové komunikace (UART) mezi mikrokontrolérem Arduino a jednodeskovým počítačem Raspberry Pi, což je klíčové pro koordinaci senzorů a akčních členů v robotických aplikacích.",
+    "learning": "Autor mohl získat cenné zkušenosti s integrací a komunikací mezi mikrokontroléry (Arduino a Raspberry Pi) pomocí UART protokolu, stejně jako s fúzí dat z různých senzorů pro autonomní navigaci a tvorbu mapy.",
     "link": "https://github.com/martiinek/ArduPi-Car"
   }
 ]
