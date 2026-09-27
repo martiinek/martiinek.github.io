@@ -1,8 +1,8 @@
 [
   {
     "id": "esp32-drone-flight-controller",
-    "title": "Arduino Letový Kontrolér pro Dron s ESP32",
-    "description": "Tento projekt představuje Arduino letový kontrolér pro dron, postavený na mikrokontroléru ESP32. Využívá PID regulaci pro stabilizaci letu, NRF24L01 pro rádiovou komunikaci a Bluetooth pro ladění parametrů. Zpracovává data ze senzorů a řídí motory, s paralelním zpracováním úloh pomocí FreeRTOS.",
+    "title": "Arduino letový kontrolér pro dron",
+    "description": "Tento projekt představuje Arduino letový kontrolér pro drony, postavený na mikrokontroléru ESP32. Využívá různé senzory a PID regulaci pro stabilní let, přičemž komunikace s dálkovým ovládáním probíhá přes NRF24L01 a ladění parametrů přes Bluetooth. Paralelní zpracování úloh je zajištěno pomocí FreeRTOS.",
     "technologies": [
       "C++",
       "Arduino",
@@ -12,26 +12,26 @@
       "Bluetooth",
       "FreeRTOS",
       "I2C",
-      "SPI"
+      "SPI",
+      "BME280",
+      "HMC5883"
     ],
-    "learning": "Autor mohl získat zkušenosti s implementací paralelních úloh pomocí FreeRTOS na ESP32, zejména pro efektivní správu rádiové a Bluetooth komunikace v reálném čase.",
+    "learning": "Autor mohl získat cenné zkušenosti s implementací a laděním PID regulace v reálném čase pro stabilizaci letu, stejně jako s efektivním řízením souběžných úloh (komunikace, senzory) pomocí FreeRTOS na mikrokontroléru ESP32.",
     "link": "https://github.com/martiinek/ESP32-Drone-Flight-Controller"
   },
   {
     "id": "ardupi-car",
-    "title": "Autonomní mapovací vozítko",
-    "description": "Tento projekt se zaměřuje na konstrukci autonomního mapovacího vozítka, které využívá kombinaci platforem Arduino a Raspberry Pi. Systém sbírá data z různých senzorů, jako je kamera a ultrazvuk, pro detekci překážek a navigaci. Cílem je vytvořit 2D mapu prozkoumaného prostředí pomocí algoritmů pro optimální cestu.",
+    "title": "Autonomní mapovací auto",
+    "description": "Projekt ArduPi-Car je autonomní mapovací vozidlo, které kombinuje Arduino a Raspberry Pi pro navigaci a tvorbu 2D mapy prostředí. Využívá senzory jako kamera a ultrazvuk pro detekci překážek a sběr dat, přičemž komunikace mezi mikrokontroléry probíhá přes UART.",
     "technologies": [
       "Python",
-      "C/C++",
+      "C++",
       "Arduino",
       "Raspberry Pi",
       "UART",
-      "Computer Vision",
-      "Robotics",
-      "Ultrasonic Sensor"
+      "Senzory"
     ],
-    "learning": "Autor mohl získat cenné zkušenosti s integrací různých hardwarových komponent a senzorů s mikrokontroléry a jednodeskovými počítači, zejména pak s implementací spolehlivé sériové komunikace (UART) mezi Arduinem a Raspberry Pi pro řízení a sběr dat.",
+    "learning": "Autor projektu mohl získat cenné zkušenosti s integrací a komunikací mezi mikrokontrolérem (Arduino) a jednodeskovým počítačem (Raspberry Pi) pomocí sériové linky UART, včetně synchronizace dat a příkazů pro řízení pohybu a sběr dat ze senzorů.",
     "link": "https://github.com/martiinek/ArduPi-Car"
   }
 ]
